@@ -1,0 +1,14 @@
+# robots.txt for AnitechCS.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.anitechcs.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Disallow unnecessary paths (if any)
+# Disallow: /admin/
+# Disallow: /private/
