@@ -1231,16 +1231,16 @@
             submitBtn.classList.add('loading');
             submitBtn.disabled = true;
             
-            // Using FormSubmit.co - FREE form backend service
-            // Replace YOUR_EMAIL with actual email
-            fetch('https://formsubmit.co/ajax/meesamabbas7373@gmail.com', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: JSON.stringify(formData)
-            })
+            // Using FormSfree.co - FREE form backend service
+           
+           // Using Formspree instead
+       fetch('https://formspree.io/f/xeovqqew', {
+       method: 'POST',
+       headers: {
+           'Content-Type': 'application/json'
+       },
+       body: JSON.stringify(formData)
+   })
             .then(response => response.json())
             .then(data => {
                 successMessage.classList.add('show');
