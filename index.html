@@ -1269,29 +1269,29 @@
 
         // Newsletter Subscription using FormSubmit.co
         function subscribeNewsletter(event) {
-            event.preventDefault();
-            const input = event.target.querySelector('input');
-            const email = input.value;
-            
-            fetch('https://formsubmit.co/ajax/meesamabbas7373@gmail.com', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: JSON.stringify({
-                    email: email,
-                    subject: 'Newsletter Subscription'
-                })
-            })
-            .then(() => {
-                alert('Thank you for subscribing! You will receive updates at ' + email);
-                input.value = '';
-            })
-            .catch(() => {
-                alert('Subscription failed. Please try again.');
-            });
-        }
+    event.preventDefault();
+    const input = event.target.querySelector('input');
+    const email = input.value;
+    
+    fetch('https://formsubmit.co/ajax/meesamabbas7373@gmail.com', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+            email: email,
+            subject: 'Newsletter Subscription'
+        })
+    })
+    .then(() => {
+        alert('Thank you for subscribing! You will receive updates at ' + email);
+        input.value = '';
+    })
+    .catch(() => {
+        alert('Subscription failed. Please try again.');
+    });
+}
 
         // Header scroll effect
         window.addEventListener('scroll', () => {
