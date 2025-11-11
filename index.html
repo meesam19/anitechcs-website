@@ -1273,17 +1273,18 @@
     const input = event.target.querySelector('input');
     const email = input.value;
     
-    fetch('https://formsubmit.co/ajax/meesamabbas7373@gmail.com', {
+    // Using Formspree (same as contact form)
+    fetch('https://formspree.io/f/xeovqqew', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify({
             email: email,
-            subject: 'Newsletter Subscription'
+            _subject: 'Newsletter Subscription'
         })
     })
+    .then(response => response.json())
     .then(() => {
         alert('Thank you for subscribing! You will receive updates at ' + email);
         input.value = '';
@@ -1292,6 +1293,7 @@
         alert('Subscription failed. Please try again.');
     });
 }
+
 
         // Header scroll effect
         window.addEventListener('scroll', () => {
