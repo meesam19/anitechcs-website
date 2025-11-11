@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AnitechCS - Global IT Solutions Provider offering Website Development, Cloud Hosting, and Digital Infrastructure Solutions since 2012. Offices in USA, Canada, Europe, Asia & Africa.">
+    <meta name="keywords" content="website development, cloud hosting, IT solutions, digital infrastructure, web design, AnitechCS, ERP integration, digital transformation">
+    <meta name="author" content="AnitechCS">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://meesam19.github.io/anitechcs-website/">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="AnitechCS - Empowering Businesses with Digital Brilliance">
+    <meta property="og:description" content="Professional IT solutions provider with global presence across Asia, North America, Europe, and Africa. Offering Website Development, Cloud Hosting & Digital Infrastructure since 2012.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://meesam19.github.io/anitechcs-website/">
+    <meta property="og:image" content="https://meesam19.github.io/anitechcs-website/images/og-image.jpg">
+    <meta property="og:site_name" content="AnitechCS">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AnitechCS - Global IT Solutions Provider">
+    <meta name="twitter:description" content="Website Development, Cloud Hosting & Digital Infrastructure Solutions since 2012.">
+    <meta name="twitter:image" content="https://meesam19.github.io/anitechcs-website/images/twitter-image.jpg">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AnitechCS",
+      "url": "https://meesam19.github.io/anitechcs-website",
+      "logo": "https://meesam19.github.io/anitechcs-website/images/logo.png",
+      "description": "Global IT Solutions Provider specializing in Website Development, Cloud Hosting, and Digital Infrastructure",
+      "foundingDate": "2012-11",
+      "founders": [
+        {
+          "@type": "Person",
+          "name": "Andrew Basil"
+        },
+        {
+          "@type": "Person",
+          "name": "Jimmy Mathew"
+        },
+        {
+          "@type": "Person",
+          "name": "Mohmamed Rafik Alam"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "555 Mission Street",
+        "addressLocality": "San Francisco",
+        "addressRegion": "CA",
+        "postalCode": "94105",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-415-XXX-XXXX",
+        "contactType": "Sales",
+        "email": "sales@anitechcs.com",
+        "availableLanguage": ["English"]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/anitechcs",
+        "https://twitter.com/anitechcs",
+        "https://www.facebook.com/anitechcs"
+      ],
+      "areaServed": [
+        "US", "CA", "IN", "PH", "DK", "ZA"
+      ]
+    }
+    </script>
+    
+    <title>AnitechCS - Global IT Solutions Provider | Website Development & Cloud Hosting</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C31RWW7HLX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-C31RWW7HLX');
+      
+      // Track CTA clicks
+      window.addEventListener('load', function() {
+        document.querySelectorAll('.cta-button').forEach(function(button) {
+          button.addEventListener('click', function() {
+            gtag('event', 'cta_click', {
+              'button_text': this.textContent.trim()
+            });
+          });
+        });
+      });
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #007BFF;
+            --secondary: #20232A;
+            --accent: #F8F9FA;
+            --white: #ffffff;
+            --gray: #6c757d;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            color: var(--secondary);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Holiday Banner */
+        .holiday-banner {
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+            color: white;
+            text-align: center;
+            padding: 12px 20px;
+            font-weight: 600;
+            position: relative;
+            animation: slideDown 0.5s ease;
+        }
+
+        .holiday-banner i {
+            margin-right: 8px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        /* Header & Navigation */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--secondary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 500;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--secondary);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #0056b3 100%);
+            color: white;
+            padding: 120px 20px 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,50 Q300,100 600,50 T1200,50 L1200,120 L0,120 Z" fill="rgba(255,255,255,0.05)"/></svg>') repeat-x bottom;
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: var(--primary);
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            animation: fadeInUp 1.2s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 80px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--gray);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        /* About Section */
+        #about {
+            background: var(--accent);
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .leadership {
+            margin-top: 2rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .leadership h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,123,255,0.2);
+        }
+
+        .service-card i {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+
+        .service-card p {
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Pricing Section */
+        #pricing {
+            background: var(--accent);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2.5rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--primary);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,123,255,0.15);
+        }
+
+        .pricing-card.featured {
+            border: 2px solid var(--primary);
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+
+        .price {
+            font-size: 2.5rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+
+        .price small {
+            font-size: 1rem;
+            color: var(--gray);
+            font-weight: 400;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 2rem 0;
+            text-align: left;
+        }
+
+        .pricing-features li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid var(--accent);
+        }
+
+        .pricing-features i {
+            color: #28a745;
+            margin-right: 10px;
+        }
+
+        .discount-badge {
+            background: #dc3545;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* Global Presence Map */
+        .map-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-top: 2rem;
+        }
+
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .location-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--accent);
+            border-radius: 8px;
+        }
+
+        .location-item i {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .location-item h4 {
+            font-size: 1rem;
+            color: var(--secondary);
+        }
+
+        /* Contact Form */
+        #contact {
+            background: var(--accent);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .contact-info h3 {
+            color: var(--primary);
+            margin-bottom: 2rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-item i {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-right: 1rem;
+            margin-top: 5px;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: var(--primary);
+            color: white;
+            padding: 12px 40px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        /* Map Embed */
+        .map-embed {
+            margin-top: 3rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .map-embed iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 3rem 20px 1.5rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.8rem;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+        }
+
+        /* Newsletter */
+        .newsletter-form {
+            display: flex;
+            margin-top: 1rem;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .newsletter-form button {
+            padding: 10px 20px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            background: #0056b3;
+        }
+
+        /* Careers Section */
+        #careers {
+            background: white;
+        }
+
+        .careers-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .career-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--accent);
+            border-radius: 10px;
+        }
+
+        .benefit-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .mobile-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: white;
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+                transition: left 0.3s;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        /* Success Message */
+        .success-message {
+            display: none;
+            background: #28a745;
+            color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .success-message.show {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+
+        /* Loading State */
+        .submit-btn.loading {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Holiday Banner -->
+    <div class="holiday-banner">
+        <i class="fas fa-gift"></i>
+        🎉 Special Holiday Offer: 15% OFF on Website Development | 2 Months FREE Cloud Hosting on Annual Plans! 🎉
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#home" class="logo">Anitech<span>CS</span></a>
+            <button class="mobile-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a onclick="scrollToSection('home')">Home</a></li>
+                <li><a onclick="scrollToSection('about')">About</a></li>
+                <li><a onclick="scrollToSection('services')">Services</a></li>
+                <li><a onclick="scrollToSection('pricing')">Pricing</a></li>
+                <li><a onclick="scrollToSection('careers')">Careers</a></li>
+                <li><a onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content container">
+            <h1>Empowering Businesses with Digital Brilliance</h1>
+            <p>Global IT Solutions Provider - Website Development, Cloud Hosting & Digital Infrastructure</p>
+            <button class="cta-button" onclick="scrollToSection('contact')">Get a Free Quote</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About AnitechCS</h2>
+            <p class="section-subtitle">Innovation, Technology & Customer Satisfaction Since 2012</p>
+            <div class="about-content">
+                <p>Founded in November 2012, AnitechCS is a global IT solutions provider driven by innovation, technology, and customer satisfaction. We deliver secure, scalable, and high-performing technology solutions to businesses worldwide.</p>
+                <p>With offices spanning across Asia (India & Philippines), North America (California, Boston, and Montreal), Europe (Copenhagen), and Africa (Johannesburg), we provide comprehensive Web Development, Cloud Hosting, ERP Integration, and Digital Transformation services.</p>
+                <div class="leadership">
+                    <h3>Our Leadership</h3>
+                    <p>Under the visionary leadership of <strong>Andrew Basil</strong>, <strong>Jimmy Mathew</strong>, and <strong>Mohmamed Rafik Alam</strong>, AnitechCS has built a reputation for excellence and reliability in the global IT industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive IT Solutions Tailored to Your Needs</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Website Development</h3>
+                    <p>Custom websites built with modern technologies. From basic sites to enterprise solutions, we create digital experiences that drive results.</p>
+                    <button class="cta-button" style="font-size: 0.9rem; padding: 10px 25px;" onclick="scrollToSection('website-pricing')">View Packages</button>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Hosting</h3>
+                    <p>Reliable, secure, and scalable cloud hosting solutions. Choose from basic to enterprise plans with 99.9% uptime guarantee.</p>
+                    <button class="cta-button" style="font-size: 0.9rem; padding: 10px 25px;" onclick="scrollToSection('hosting-pricing')">Explore Plans</button>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Maintenance & Support</h3>
+                    <p>24/7 website maintenance, security updates, and technical support to keep your digital assets running smoothly.</p>
+                    <button class="cta-button" style="font-size: 0.9rem; padding: 10px 25px;" onclick="scrollToSection('maintenance-pricing')">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div class="container">
+            <h2 class="section-title">Transparent Pricing</h2>
+            <p class="section-subtitle">Affordable Solutions for Every Business Size</p>
+            
+            <h3 style="text-align: center; margin: 3rem 0 2rem; color: var(--secondary);" id="website-pricing">Website Development</h3>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Basic Website</h3>
+                    <p>Perfect for startups</p>
+                    <div class="price">$499</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 5 Pages</li>
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> Contact Form</li>
+                        <li><i class="fas fa-check"></i> SEO Ready</li>
+                        <li><i class="fas fa-check"></i> 1 Month Support</li>
+                    </ul>
+                    <span class="discount-badge">15% Holiday Discount</span>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Corporate Website</h3>
+                    <p>Most Popular</p>
+                    <div class="price">$999</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Up to 15 Pages</li>
+                        <li><i class="fas fa-check"></i> Custom Design</li>
+                        <li><i class="fas fa-check"></i> CMS Integration</li>
+                        <li><i class="fas fa-check"></i> Advanced SEO</li>
+                        <li><i class="fas fa-check"></i> 3 Months Support</li>
+                    </ul>
+                    <span class="discount-badge">15% Holiday Discount</span>
+                </div>
+                <div class="pricing-card">
+                    <h3>E-commerce</h3>
+                    <p>For online stores</p>
+                    <div class="price">$1,499</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited Products</li>
+                        <li><i class="fas fa-check"></i> Payment Gateway</li>
+                        <li><i class="fas fa-check"></i> Inventory Management</li>
+                        <li><i class="fas fa-check"></i> Shopping Cart</li>
+                        <li><i class="fas fa-check"></i> 6 Months Support</li>
+                    </ul>
+                    <span class="discount-badge">15% Holiday Discount</span>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise Custom</h3>
+                    <p>Tailored solutions</p>
+                    <div class="price">$2,999<small>+</small></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Custom Features</li>
+                        <li><i class="fas fa-check"></i> API Integration</li>
+                        <li><i class="fas fa-check"></i> Advanced Security</li>
+                        <li><i class="fas fa-check"></i> Dedicated Support</li>
+                        <li><i class="fas fa-check"></i> 12 Months Support</li>
+                    </ul>
+                    <span class="discount-badge">15% Holiday Discount</span>
+                </div>
+            </div>
+
+            <h3 style="text-align: center; margin: 3rem 0 2rem; color: var(--secondary);" id="hosting-pricing">Cloud Hosting & Maintenance</h3>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Basic Hosting</h3>
+                    <div class="price">$15<small>/month</small></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 5 GB Space</li>
+                        <li><i class="fas fa-check"></i> 50 GB Bandwidth</li>
+                        <li><i class="fas fa-check"></i> SSL Certificate</li>
+                        <li><i class="fas fa-check"></i> Email Support</li>
+                    </ul>
+                    <span class="discount-badge">2 Months Free (Annual)</span>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Business Cloud</h3>
+                    <div class="price">$49<small>/month</small></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 50 GB Space</li>
+                        <li><i class="fas fa-check"></i> Unlimited Bandwidth</li>
+                        <li><i class="fas fa-check"></i> Advanced SSL</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                    </ul>
+                    <span class="discount-badge">2 Months Free (Annual)</span>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise Cloud</h3>
+                    <div class="price">$99<small>/month</small></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited Space</li>
+                        <li><i class="fas fa-check"></i> Unlimited Bandwidth</li>
+                        <li><i class="fas fa-check"></i> Premium Security</li>
+                        <li><i class="fas fa-check"></i> 24/7 Support</li>
+                    </ul>
+                    <span class="discount-badge">2 Months Free (Annual)</span>
+                </div>
+            </div>
+
+            <h3 style="text-align: center; margin: 3rem 0 2rem; color: var(--secondary);" id="maintenance-pricing">Website Maintenance & Security</h3>
+            <div class="pricing-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); max-width: 800px; margin: 0 auto;">
+                <div class="pricing-card">
+                    <h3>Monthly Plan</h3>
+                    <div class="price">$59<small>/month</small></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Regular Updates</li>
+                        <li><i class="fas fa-check"></i> Security Monitoring</li>
+                        <li><i class="fas fa-check"></i> Backup Service</li>
+                        <li><i class="fas fa-check"></i> Performance Optimization</li>
+                    </ul>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Annual Plan</h3>
+                    <div class="price">$499<small>/year</small></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> All Monthly Features</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                        <li><i class="fas fa-check"></i> Quarterly Reports</li>
+                        <li><i class="fas fa-check"></i> Save $209/year</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Presence -->
+    <section id="global-presence">
+        <div class="container">
+            <h2 class="section-title">Global Presence</h2>
+            <p class="section-subtitle">Serving Clients Across 5 Continents</p>
+            <div class="map-section">
+                <h3 style="text-align: center; color: var(--primary); margin-bottom: 2rem;">Our Offices Worldwide</h3>
+                <div class="locations-grid">
+                    <div class="location-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>California, USA</h4>
+                        <p style="font-size: 0.9rem; color: var(--gray); margin-top: 0.5rem;">San Francisco</p>
+                    </div>
+                    <div class="location-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Boston, USA</h4>
+                        <p style="font-size: 0.9rem; color: var(--gray); margin-top: 0.5rem;">Massachusetts</p>
+                    </div>
+                    <div class="location-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Montreal, Canada</h4>
+                        <p style="font-size: 0.9rem; color: var(--gray); margin-top: 0.5rem;">Quebec</p>
+                    </div>
+                    <div class="location-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Copenhagen, Denmark</h4>
+                        <p style="font-size: 0.9rem; color: var(--gray); margin-top: 0.5rem;">Europe</p>
+                    </div>
+                    <div class="location-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>India</h4>
+                        <p style="font-size: 0.9rem; color: var(--gray); margin-top: 0.5rem;">Asia Pacific</p>
+                    </div>
+                    <div class="location-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Philippines</h4>
+                        <p style="font-size: 0.9rem; color: var(--gray); margin-top: 0.5rem;">Asia Pacific</p>
+                    </div>
+                    <div class="location-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Johannesburg</h4>
+                        <p style="font-size: 0.9rem; color: var(--gray); margin-top: 0.5rem;">South Africa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section id="careers">
+        <div class="container">
+            <h2 class="section-title">Join Our Team</h2>
+            <p class="section-subtitle">Build Your Career with a Global Leader in IT Solutions</p>
+            <div class="careers-content">
+                <p style="text-align: center; font-size: 1.1rem; margin-bottom: 3rem;">At AnitechCS, we believe in nurturing talent and fostering innovation. Join our diverse, global team and work on cutting-edge projects that make a real impact.</p>
+                
+                <div class="career-benefits">
+                    <div class="benefit-card">
+                        <i class="fas fa-globe"></i>
+                        <h3>Global Opportunities</h3>
+                        <p>Work with teams across 7 countries</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Career Growth</h3>
+                        <p>Continuous learning and advancement</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Collaborative Culture</h3>
+                        <p>Innovative and inclusive environment</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Work-Life Balance</h3>
+                        <p>Flexible schedules and remote options</p>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 3rem;">
+                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">Interested in joining AnitechCS?</p>
+                    <button class="cta-button" onclick="openCareerForm()">Submit Your Application</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">We'd Love to Hear From You</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>555 Mission Street<br>San Francisco, California 94105<br>United States</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>Sales: sales@anitechcs.com<br>
+                            Support: support@anitechcs.com<br>
+                            Careers: careers@anitechcs.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM PST<br>
+                            24/7 Support Available</p>
+                        </div>
+                    </div>
+                    <div class="social-links" style="margin-top: 2rem;">
+                        <a href="https://linkedin.com/company/anitechcs" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/anitechcs" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://facebook.com/anitechcs" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <div class="success-message" id="successMessage">
+                        Thank you! Your message has been sent successfully. We'll get back to you soon.
+                    </div>
+                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service...</option>
+                                <option value="website-development">Website Development</option>
+                                <option value="cloud-hosting">Cloud Hosting</option>
+                                <option value="maintenance">Maintenance & Support</option>
+                                <option value="custom-solution">Custom Solution</option>
+                                <option value="careers">Career Opportunities</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map Embed -->
+            <div class="map-embed">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0194031697334!2d-122.39927368468174!3d37.78910597975717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807dac27c9a5%3A0xc90c7e7b455e7c06!2s555%20Mission%20St%2C%20San%20Francisco%2C%20CA%2094105!5e0!3m2!1sen!2sus!4v1635000000000!5m2!1sen!2sus" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="AnitechCS Office Location">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AnitechCS</h3>
+                    <p>Global IT Solutions Provider specializing in Website Development, Cloud Hosting, and Digital Infrastructure since 2012.</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/company/anitechcs" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/anitechcs" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://facebook.com/anitechcs" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a onclick="scrollToSection('about')">About Us</a>
+                    <a onclick="scrollToSection('services')">Services</a>
+                    <a onclick="scrollToSection('pricing')">Pricing</a>
+                    <a onclick="scrollToSection('careers')">Careers</a>
+                    <a onclick="scrollToSection('contact')">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a onclick="scrollToSection('website-pricing')" style="cursor: pointer;">Website Development</a>
+                    <a onclick="scrollToSection('hosting-pricing')" style="cursor: pointer;">Cloud Hosting</a>
+                    <a onclick="scrollToSection('maintenance-pricing')" style="cursor: pointer;">Maintenance & Support</a>
+                    <a onclick="scrollToSection('contact')" style="cursor: pointer;">Custom Solutions</a>
+                    <a onclick="scrollToSection('contact')" style="cursor: pointer;">ERP Integration</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on our latest offers and services.</p>
+                    <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                        <input type="email" placeholder="Your email" required aria-label="Email for newsletter">
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AnitechCS. All Rights Reserved. | Empowering Businesses Since 2012</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Smooth Scroll Function
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const navLinks = document.getElementById('navLinks');
+            
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+            
+            navLinks.classList.remove('active');
+        }
+
+        // Contact Form Submission Handler using Formspree
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const successMessage = document.getElementById('successMessage');
+            const form = document.getElementById('contactForm');
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                service: document.getElementById('service').value,
+                message: document.getElementById('message').value
+            };
+            
+            submitBtn.textContent = 'Sending...';
+            submitBtn.classList.add('loading');
+            submitBtn.disabled = true;
+            
+            // Using Formspree
+            fetch('https://formspree.io/f/xeovqqew', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                successMessage.classList.add('show');
+                form.reset();
+                submitBtn.textContent = 'Send Message';
+                submitBtn.classList.remove('loading');
+                submitBtn.disabled = false;
+                
+                setTimeout(() => {
+                    successMessage.classList.remove('show');
+                }, 5000);
+            })
+            .catch(error => {
+                console.error('Form submission error:', error);
+                alert('There was an error sending your message. Please try again.');
+                submitBtn.textContent = 'Send Message';
+                submitBtn.classList.remove('loading');
+                submitBtn.disabled = false;
+            });
+        }
+
+        // Career Form Handler
+        function openCareerForm() {
+            document.getElementById('service').value = 'careers';
+            scrollToSection('contact');
+        }
+
+        // Newsletter Subscription using Formspree
+        function subscribeNewsletter(event) {
+            event.preventDefault();
+            const input = event.target.querySelector('input');
+            const email = input.value;
+            
+            // Using Formspree (same as contact form)
+            fetch('https://formspree.io/f/xeovqqew', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    email: email,
+                    _subject: 'Newsletter Subscription'
+                })
+            })
+            .then(response => response.json())
+            .then(() => {
+                alert('Thank you for subscribing! You will receive updates at ' + email);
+                input.value = '';
+            })
+            .catch((error) => {
+                console.error('Newsletter error:', error);
+                alert('Subscription failed. Please try again.');
+            });
+        }
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            }
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.service-card, .pricing-card, .benefit-card');
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'all 0.6s ease';
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
